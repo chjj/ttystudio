@@ -1,6 +1,5 @@
 all:
-	@node . ter-u14n.bdf
-	@node . ter-u14b.bdf
+	@node . *.bdf
 
 clean:
 	@rm ter-*.json

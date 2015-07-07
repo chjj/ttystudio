@@ -180,6 +180,12 @@ $ ttystudio output.gif --log \
 ```
 
 
+## OSX
+
+[pty.js][pty.js] seems to currently be causing [input lag][lag] on OSX. This is
+being investigated.
+
+
 ## Notes
 
 A special thanks to the folks who developed [pxxl.js][pxxl.js] - a BDF font
@@ -215,3 +221,4 @@ See LICENSE for more info.
 [pxxl.js]: https://github.com/remcoder/Pxxl.js
 [tng]: https://github.com/chjj/tng
 [bdf]: https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format
+[lag]: https://github.com/chjj/pty.js/issues/118

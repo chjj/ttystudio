@@ -7,6 +7,9 @@ __A terminal-to-gif recorder minus the headaches.__
 Record your terminal and compile it to a GIF or APNG without any external
 dependencies, bash scripts, gif concatenation, etc.
 
+Install with: `$ npm install ttystudio`. (Add `-g` for global install).
+
+
 ## Usage
 
 ``` bash

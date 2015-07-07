@@ -107,16 +107,7 @@ its own, in 99% javascript (aside from pty.js which is a node c++ binding to
 spawn terminals).
 
 
-## Bonus
-
-To watch your recording __in__ your terminal, check out [tng][tng]:
-
-``` bash
-$ tng output.gif --height=$(($(tput lines) - 2))
-```
-
-
-## Other Options
+## Options and Examples
 
 Compiling to APNG:
 
@@ -165,7 +156,6 @@ $ ttystudio --play frames.json
 
 ### Full Options List
 
-
 - `-l, --log
   - Log status to stderr.
 
@@ -195,7 +185,7 @@ $ ttystudio --play frames.json
     overwritten by the font (default: 8x14).
 
 - `-t, --term [term-name]`
-  - Choose a range of frames to compile. e.g. 5-200.
+  - Choose the terminal name for terminfo.
 
 - `--palette`
   - Use a global palette for APNGs instead of RGBA.
@@ -243,6 +233,15 @@ $ ttystudio output.gif --log \
 
 [pty.js][pty.js] seems to currently be causing [input lag][lag] on OSX. This is
 being investigated.
+
+
+## Bonus
+
+To watch your recording __in__ your terminal, check out [tng][tng]:
+
+``` bash
+$ tng output.gif --height=$(($(tput lines) - 2))
+```
 
 
 ## Notes

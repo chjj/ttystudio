@@ -156,6 +156,65 @@ Piping:
 $ ttystudio frames.json - | feh -
 ```
 
+Replaying frames in the terminal:
+
+``` bash
+$ ttystudio --play frames.json
+```
+
+
+### Full Options List
+
+
+- `-l, --log
+  - Log status to stderr.
+
+- `-f, --font-file [font-file]`
+  - Choose a BDF font in ttystudio's JSON format.
+
+- `-b, --font-bold [port]`
+  - Choose a bold BDF font in ttystudio's JSON format.
+
+- `-d, --delay [delay-ms]`
+  - Specify frame delay in ms (default: 100).
+
+- `-i, --interval [interval-ms]`
+  - Specify frame snapshot interval in ms (default: 100).
+
+- `-k, --key [quit-key]`
+  - Choose a key combination to quit recording (default: C-q).
+
+- `-n, --num-plays [num-plays]`
+  - Specify a number of plays for the animation (default: 0 - infinite).
+
+- `-r, --range [frame-range]`
+  - Choose a range of frames to compile. e.g. 5-200.
+
+- `-x, --ratio [pixel-cell-ratio]`
+  - Choose pixel to cell ratio. This option is useless right now since it is
+    overwritten by the font (default: 8x14).
+
+- `-t, --term [term-name]`
+  - Choose a range of frames to compile. e.g. 5-200.
+
+- `--palette`
+  - Use a global palette for APNGs instead of RGBA.
+
+- `--no-palette, --rgba`
+  - Use RGBA for APNGs instead of a global palette.
+
+- `play, --play`
+  - Replay a frames file in the terminal.
+
+- `record, --record`
+  - Explicitly choose to record (not very useful).
+
+- `compile, --compile`
+  - Explicitly choose to compile (not very useful).
+
+- `-h, --help`
+  - Display help information.
+
 
 ## Choosing a new font for your terminal recording
 

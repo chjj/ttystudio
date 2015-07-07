@@ -98,6 +98,19 @@ function record(options) {
 }
 
 /**
+ * Play
+ */
+
+function play(options) {
+  var player = require('../lib/play');
+
+  return player(options, function(err) {
+    if (err) throw err;
+    return process.exit(0);
+  });
+}
+
+/**
  * Main
  */
 
@@ -107,6 +120,9 @@ function main(options) {
   }
   if (options.record) {
     return record(options);
+  }
+  if (options.play) {
+    return play(options);
   }
   return record(options);
 }

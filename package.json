@@ -8,8 +8,10 @@
     "ttystudio": "./bin/ttystudio",
     "ttystudio-record": "./bin/record",
     "ttystudio-compile": "./bin/compile",
+    "ttystudio-play": "./bin/play",
     "tsrecord": "./bin/record",
-    "tscompile": "./bin/compile"
+    "tscompile": "./bin/compile",
+    "tsplay": "./bin/play"
   },
   "scripts": {
     "start": "./bin/ttystudio ~/ttystudio-test.gif"

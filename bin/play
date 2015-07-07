@@ -2,8 +2,8 @@
 
 var options = require('../lib/options');
 
-options.record = true;
+options.play = true;
 options.compile = false;
-options.play = false;
+options.record = false;
 
 require('./ttystudio')(options);

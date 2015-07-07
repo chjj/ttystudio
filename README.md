@@ -159,7 +159,7 @@ $ ttystudio --play frames.json
 
 ### Full Options List
 
-- `-l, --log
+- `-l, --log`
   - Log status to stderr.
 
 - `-f, --font-file [font-file]`

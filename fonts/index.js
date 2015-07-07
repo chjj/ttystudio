@@ -45,8 +45,8 @@ function compileFont(file) {
   Object.keys(glyphs).forEach(function(ch) {
     for (var p = 0; p < glyphs[ch].pixels.length; p++) {
       var pixel = glyphs[ch].pixels[p]
-              , x = pixel.x
-              , y = pixel.y;
+        , x = pixel.x
+        , y = pixel.y;
 
       for (var yi = y; yi < y + 1; yi++) {
         for (var xi = x; xi < x + 1; xi++) {

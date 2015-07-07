@@ -1,0 +1,30 @@
+{
+  "name": "ttystudio",
+  "description": "A terminal-to-gif recorder minus the headaches.",
+  "author": "Christopher Jeffrey",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "bin": {
+    "ttystudio": "./bin/ttystudio",
+    "ttystudio-record": "./bin/record",
+    "ttystudio-compile": "./bin/compile",
+    "tsrecord": "./bin/record",
+    "tscompile": "./bin/compile"
+  },
+  "scripts": {
+    "start": "./bin/ttystudio ~/ttystudio-test.gif"
+  },
+  "man": "./man/ttystudio.1",
+  "preferGlobal": true,
+  "repository": "git://github.com/chjj/ttystudio.git",
+  "homepage": "https://github.com/chjj/ttystudio",
+  "bugs": { "url": "http://github.com/chjj/ttystudio/issues" },
+  "license": "MIT",
+  "keywords": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
+  "tags": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
+  "dependencies": {
+    "blessed": "0.1.7",
+    "term.js": "0.0.5",
+    "pty.js": "0.2.8"
+  }
+}

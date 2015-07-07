@@ -1,0 +1,108 @@
+.ds q \N'34'
+.TH ttystudio 1
+
+.SH NAME
+ttystudio \- a terminal to GIF/APNG recorder
+
+.SH SYNOPSIS
+.nf
+.B ttystudio, tsrecord, tscompile [options] [input] [output]
+.fi
+
+.SH DESCRIPTION
+.B ttystudio
+is a terminal record that can write to GIFs or APNGs without any external
+dependencies or GUI playback.
+
+.SH OPTIONS
+
+.TP
+.BI \-l,\ \-\-log
+Log status to stderr.
+
+.TP
+.BI \-f,\ \-\-font-file\ [font-file]
+Choose a BDF font in ttystudio's JSON format.
+
+.TP
+.BI \-b,\ \-\-font-bold\ [port]
+Choose a bold BDF font in ttystudio's JSON format.
+
+.TP
+.BI \-d,\ \-\-delay\ [delay-ms]
+Specify frame delay in ms (default: 100).
+
+.TP
+.BI \-i,\ \-\-interval\ [interval-ms]
+Specify frame snapshot interval in ms (default: 100).
+
+.TP
+.BI \-k,\ \-\-key\ [quit-key]
+Chose a key combination to quit recording (default: C-q).
+
+.TP
+.BI \-n,\ \-\-num-plays\ [num-plays]
+Specify a number of plays for the animation (default: 0 - infinite).
+
+.TP
+.BI \-r,\ \-\-range\ [frame-range]
+Choose a range of frames to compile. e.g. 5-200.
+
+.TP
+.BI \-x,\ \-\-ratio\ [pixel-cell-ratio]
+Choose pixel to cell ratio. This option is useless right now since it is
+overwritten by the font (default: 8x14).
+
+.TP
+.BI \-t,\ \-\-term\ [term-name]
+Choose a range of frames to compile. e.g. 5-200.
+
+.TP
+.BI \-\-palette
+Use a global palette for APNGs instead of RGBA.
+
+.TP
+.BI \-\-no-palette,\ \-\-rgba
+Use RGBA for APNGs instead of a global palette.
+
+.TP
+.BI record,\ \-\-record
+Explicitly choose to record (not very useful).
+
+.TP
+.BI compile,\ \-\-compile
+Explicitly choose to compile (not very useful).
+
+.TP
+.BI \-h,\ \-\-help
+Display help information.
+
+.SH LIBRARY
+For running programmatically.
+
+.B Example
+
+    var ttystudio = require('ttystudio')
+      , SGRWriter = ttystudio.SGRWriter
+      , GIFWriter = ttystudio.GIFWriter
+      , PNGWriter = ttystudio.PNGWriter;
+
+.SH EXAMPLES
+
+    $ ttystudio output.gif --log # record and compile
+    $ ttystudio frames.json --log # record
+    $ ttystudio frames.json output.gif --range=0-50 # compile
+
+.SH BUGS
+Please report any bugs to https://github.com/chjj/ttystudio.
+
+.SH LICENSE
+Copyright (c) 2015, Christopher Jeffrey (MIT License)
+
+.SH "SEE ALSO"
+.BR ttystudio(1),
+.BR ttystudio-record(1),
+.BR ttystudio-compile(1),
+.BR tsrecord(1),
+.BR tscompile(1),
+.BR ttyrec(1)

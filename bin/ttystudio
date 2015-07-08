@@ -90,7 +90,7 @@ function record(options) {
 
     options.files = [frames, output];
 
-    return compile(options).on('close', function() {
+    return compile(options).on('finish', function() {
       log('wrote image to %s', output);
       return process.exit(0);
     });

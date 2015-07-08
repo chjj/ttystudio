@@ -156,6 +156,19 @@ Replaying frames in the terminal:
 $ ttystudio --play frames.json
 ```
 
+Adding a border:
+
+``` bash
+# explanation of arguments:
+$ ttystudio output.gif --log --border=[width],[r],[g],[b],[a]
+# add a red border:
+$ ttystudio output.gif --log --border=10,255,0,0,255
+# white border:
+$ ttystudio output.gif --log --border=10,255
+$ ttystudio output.gif --log --border=10,255,255,255
+$ ttystudio output.gif --log --border=10
+```
+
 
 ### Full Options List
 
@@ -195,6 +208,9 @@ $ ttystudio --play frames.json
 
 - `--no-palette, --rgba`
   - Use RGBA for APNGs instead of a global palette.
+
+- `--border [width,r,g,b,a]`
+  - Add a border around the animation using the specified parameters.
 
 - `play, --play`
   - Replay a frames file in the terminal.

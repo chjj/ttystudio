@@ -37,7 +37,8 @@ $ firefox output.png
 
 ttystudio differs from other terminal recorders in that:
 
-1. It has its own built-in gif and apng writer, no imagemagick required.
+1. It has its own built-in gif and apng writer, no imagemagick required. The
+   writer now has built-in frame offset optimization.
 2. It has a font parser to render the font during image writing so no terminal
    playback is required when writing the image (this also means __no GUI is
    required at all__ - you can record on a remote machine via ssh).

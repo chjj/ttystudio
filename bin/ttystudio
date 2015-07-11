@@ -25,6 +25,7 @@ function compile(options) {
   if (output) {
     if (output === '-') {
       stream = process.stdout;
+      output = '[stdout]';
     } else {
       stream = fs.createWriteStream(output);
     }
@@ -57,10 +58,15 @@ function compile(options) {
   log('initializing writer');
   writer = new SGRWriter(frames, options);
 
+  writer.on('done', function(event) {
+    log('stream: ' + event);
+    log('wrote image to %s', output);
+  });
+
   log('writing image');
   writer.write();
 
-  return stream;
+  return writer;
 }
 
 /**
@@ -90,8 +96,7 @@ function record(options) {
 
     options.files = [frames, output];
 
-    return compile(options).on('finish', function() {
-      log('wrote image to %s', output);
+    return compile(options).on('done', function() {
       return process.stdin.end();
     });
   });

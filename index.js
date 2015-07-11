@@ -1,1 +1,1 @@
-module.exports = require('./lib/writer');
+module.exports = require('./lib/ttystudio');

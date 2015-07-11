@@ -12,6 +12,12 @@ var pxxl = require('../vendor/pxxl');
 
 var files = process.argv.slice(2);
 
+var silent = false;
+if (files[0] === '--silent') {
+  silent = true;
+  files.shift();
+}
+
 function compileFont(file) {
   var file = file || __dirname + '/../fonts/ter-u14n.bdf'
     , jsonFile = __dirname + '/../fonts/' + path.basename(file, '.bdf') + '.json'
@@ -24,11 +30,13 @@ function compileFont(file) {
   var width = 0
     , height = 0;
 
-  console.log(util.inspect(font, {
-    depth: 20,
-    colors: true
-  }));
-  console.log('');
+  if (!silent) {
+    console.log(util.inspect(font, {
+      depth: 20,
+      colors: true
+    }));
+    console.log('');
+  }
 
   var glyphs = Object.keys(font.glyphs).reduce(function(glyphs, code) {
     var ch = String.fromCharCode(+code);
@@ -91,8 +99,10 @@ function compileFont(file) {
     }, '');
 
     if (ch === 'M') {
-      console.log(lines);
-      console.log([width, height]);
+      if (!silent) {
+        console.log(lines);
+        console.log([width, height]);
+      }
     }
   });
 

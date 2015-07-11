@@ -1,5 +1,5 @@
 all:
-	@node . *.bdf
+	@node . --silent *.bdf
 
 clean:
 	@rm ter-*.json

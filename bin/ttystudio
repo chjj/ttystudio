@@ -83,7 +83,8 @@ function record(options) {
       , json = JSON.stringify(frames);
 
     if (!output) {
-      throw new Error('No output file specified.');
+      console.error('error: No output file specified.');
+      process.exit(1);
     }
 
     if (~output.indexOf('.json')) {

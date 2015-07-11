@@ -92,7 +92,7 @@ function record(options) {
 
     return compile(options).on('finish', function() {
       log('wrote image to %s', output);
-      return process.exit(0);
+      return process.stdin.end();
     });
   });
 }

@@ -1,9 +1,0 @@
-#!/usr/bin/env node
-
-var options = require('../lib/options');
-
-options.play = true;
-options.compile = false;
-options.record = false;
-
-require('./ttystudio')(options);

@@ -5,13 +5,7 @@
   "version": "0.0.7",
   "main": "./index.js",
   "bin": {
-    "ttystudio": "./bin/ttystudio",
-    "ttystudio-record": "./bin/record",
-    "ttystudio-compile": "./bin/compile",
-    "ttystudio-play": "./bin/play",
-    "tsrecord": "./bin/record",
-    "tscompile": "./bin/compile",
-    "tsplay": "./bin/play"
+    "ttystudio": "./bin/ttystudio"
   },
   "scripts": {
     "start": "./bin/ttystudio ~/ttystudio-test.gif"

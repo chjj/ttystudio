@@ -10,6 +10,12 @@ var fs = require('fs')
   , options = require('../lib/options');
 
 /**
+ * Title
+ */
+
+process.title = 'ttystudio';
+
+/**
  * Compile
  */
 

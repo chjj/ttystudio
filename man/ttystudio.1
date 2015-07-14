@@ -62,8 +62,9 @@ Choose the terminal name for terminfo.
 Use a global palette for APNGs instead of RGBA.
 
 .TP
-.BI \-\-no-palette,\ \-\-rgba
-Use RGBA for APNGs instead of a global palette.
+.BI \-\-no-palette,\ \-\-rgba,\ \-\-lct
+Use RGBA for APNGs instead of a global palette. This will also avoid building a
+global palette for GIFs and only use a local color table for each frame.
 
 .TP
 .BI \-\-border\ [width,r,g,b,a]

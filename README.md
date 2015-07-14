@@ -207,8 +207,10 @@ $ ttystudio output.gif --log --border=10
 - `--palette`
   - Use a global palette for APNGs instead of RGBA.
 
-- `--no-palette, --rgba`
-  - Use RGBA for APNGs instead of a global palette.
+- `--no-palette, --rgba, --lct`
+  - Use RGBA for APNGs instead of a global palette. This will also avoid
+    building a global palette for GIFs and only use a local color table for
+    each frame.
 
 - `--border [width,r,g,b,a]`
   - Add a border around the animation using the specified parameters.

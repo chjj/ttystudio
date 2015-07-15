@@ -176,7 +176,7 @@ $ ttystudio output.gif --log --border=10
 - `-l, --log`
   - Log status to stderr.
 
-- `-f, --font-file [font-file]`
+- `-f, --font [font-file]`
   - Choose a BDF font in ttystudio's JSON format.
 
 - `-b, --font-bold [port]`

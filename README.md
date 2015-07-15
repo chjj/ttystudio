@@ -246,7 +246,7 @@ $ cd ~/ttystudio/fonts
 $ make
 ...
 $ ttystudio output.gif --log \
-  --font ~/ttystudio/fonts/ter-u12n.json \
+  --font-file ~/ttystudio/fonts/ter-u12n.json \
   --font-bold ~/ttystudio/fonts/ter-u12b.json
 ```
 

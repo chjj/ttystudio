@@ -174,7 +174,10 @@ $ ttystudio output.gif --log --border=10
 ### Full Options List
 
 - `-l, --log`
-  - Log status to stderr.
+  - Log status to stderr (now default).
+
+- `-q, --quiet`
+  - Do not log status to stderr.
 
 - `-f, --font [font-file]`
   - Choose a BDF font in ttystudio's JSON format.
@@ -223,6 +226,9 @@ $ ttystudio output.gif --log --border=10
 
 - `compile, --compile`
   - Explicitly choose to compile (not very useful).
+
+- `--version`
+  - Display ttystudio version.
 
 - `-h, --help`
   - Display help information.

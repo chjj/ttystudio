@@ -182,7 +182,7 @@ $ ttystudio output.gif --log --border=10
 - `-f, --font [font-file]`
   - Choose a BDF font in ttystudio's JSON format.
 
-- `-b, --font-bold [port]`
+- `-b, --font-bold [font-file]`
   - Choose a bold BDF font in ttystudio's JSON format.
 
 - `-d, --delay [delay-ms]`

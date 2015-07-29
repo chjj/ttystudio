@@ -239,7 +239,7 @@ $ ttystudio o.gif --screenshot --screenshot-key C-p
     unless specified otherwise by `--screenshot-key`.
 
 - `--screenshot-key`
-  Set the screenshot key when in screenshot mode. Default is `C-p`.
+  - Set the screenshot key when in screenshot mode. Default is `C-p`.
 
 - `--version`
   - Display ttystudio version.

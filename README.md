@@ -170,6 +170,13 @@ $ ttystudio output.gif --log --border=10,255,255,255
 $ ttystudio output.gif --log --border=10
 ```
 
+Start in screenshot mode. This allows you to take multiple screenshot whenever
+`C-p` is pressed. ttystudio will write them all to separate images.
+
+``` bash
+$ ttystudio o.gif --screenshot --screenshot-key C-p
+```
+
 
 ### Full Options List
 
@@ -226,6 +233,13 @@ $ ttystudio output.gif --log --border=10
 
 - `compile, --compile`
   - Explicitly choose to compile (not very useful).
+
+- `screenshot, --screenshot`
+  - Start ttystudio in screenshot mode. It will take a screenshot on `C-p`
+    unless specified otherwise by `--screenshot-key`.
+
+- `--screenshot-key`
+  Set the screenshot key when in screenshot mode. Default is `C-p`.
 
 - `--version`
   - Display ttystudio version.

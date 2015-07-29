@@ -52,6 +52,19 @@ function record(options) {
 
     fs.writeFileSync(output.replace(/\.\w+$/, '') + '.frames.json', json);
 
+    if (options.screenshot) {
+      var pending = frames.length;
+      return frames.forEach(function(frame, i) {
+        options.files = [[frame], i + '-' + output];
+        return compiler(options, function(err) {
+          if (err) return fail(err);
+          if (!--pending) {
+            return process.stdin.end();
+          }
+        });
+      });
+    }
+
     options.files = [frames, output];
 
     return compiler(options, function(err) {

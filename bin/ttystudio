@@ -69,7 +69,6 @@ function record(options) {
 
     return compiler(options, function(err) {
       if (err) return fail(err);
-      return process.stdin.end();
     });
   });
 }

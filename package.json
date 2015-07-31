@@ -2,7 +2,7 @@
   "name": "ttystudio",
   "description": "A terminal-to-gif recorder minus the headaches.",
   "author": "Christopher Jeffrey",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "./index.js",
   "bin": {
     "ttystudio": "./bin/ttystudio"
@@ -19,8 +19,8 @@
   "keywords": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
   "tags": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
   "dependencies": {
-    "blessed": ">=0.1.16",
+    "blessed": ">=0.1.19",
     "term.js": ">=0.0.5",
-    "pty.js": ">=0.2.8"
+    "pty.js": ">=0.2.9"
   }
 }

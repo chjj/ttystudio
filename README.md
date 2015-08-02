@@ -273,17 +273,8 @@ $ ttystudio output.gif --log \
 
 ## OSX
 
-[pty.js][pty.js] seems to currently be causing [input lag][lag] on OSX. This is
-being investigated.
-
-
-## Bonus
-
-To watch your recording __in__ your terminal, check out [tng][tng]:
-
-``` bash
-$ tng output.gif --height=$(($(tput lines) - 2))
-```
+[pty.js][pty.js] seems to currently be causing sporadic [input lag][lag] on
+OSX. This is being investigated.
 
 
 ## Notes
@@ -295,11 +286,9 @@ looking font to the output gif/png.
 
 ## Todo
 
-- Frame offset optimization (with dispose methods).
 - More fonts and font formats supported.
 - Antialiased fonts.
 - Emit frames as events in writers.
-- Better documentation.
 
 
 ## Contribution and License Agreement

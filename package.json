@@ -3,6 +3,7 @@
   "description": "A terminal-to-gif recorder minus the headaches.",
   "author": "Christopher Jeffrey",
   "version": "0.0.14",
+  "license": "MIT",
   "main": "./index.js",
   "bin": {
     "ttystudio": "./bin/ttystudio"

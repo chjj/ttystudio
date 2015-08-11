@@ -82,7 +82,6 @@ function play(options) {
 
   return player(options, function(err) {
     if (err) return fail(err);
-    return process.exit(0);
   });
 }
 

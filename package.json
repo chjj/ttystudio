@@ -20,8 +20,8 @@
   "keywords": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
   "tags": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
   "dependencies": {
-    "blessed": ">=0.1.19",
-    "term.js": ">=0.0.5",
-    "pty.js": ">=0.2.9"
+    "blessed": ">=0.1.80",
+    "term.js": ">=0.0.6",
+    "pty.js": ">=0.3.0"
   }
 }

@@ -21,7 +21,8 @@
   "tags": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
   "dependencies": {
     "blessed": ">=0.1.80",
-    "term.js": ">=0.0.7",
-    "pty.js": ">=0.3.0"
+    "jshashes": "^1.0.7",
+    "pty.js": ">=0.3.0",
+    "term.js": ">=0.0.7"
   }
 }

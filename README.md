@@ -241,6 +241,20 @@ $ ttystudio o.gif --screenshot --screenshot-key C-p
 - `--screenshot-key`
   - Set the screenshot key when in screenshot mode. Default is `C-p`.
 
+- `screencast, --screencast`
+  - Start ttystudio in screencast mode. Also responds to `--screenshot-key`,
+    and takes a screenshot whenever a changed frame is rendered. Use the
+    screenshot key to add frames where you need to give the viewer time
+    to read.
+
+- `--screencast-padding [frame-count]`
+  - When in screencast mode, this sets the number of frames added for
+    each press of the screenshot key. So if you have a delay of 500ms
+    per frame and a screencast padding of 2, each hit of the screenshot
+    key adds frames with the current screenshot to cover one second.
+    Use to reduce the number of times you hit the screenshot key when
+    recording a screencast. (default: 1)
+
 - `--version`
   - Display ttystudio version.
 

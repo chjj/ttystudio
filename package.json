@@ -15,10 +15,27 @@
   "preferGlobal": true,
   "repository": "git://github.com/chjj/ttystudio.git",
   "homepage": "https://github.com/chjj/ttystudio",
-  "bugs": { "url": "http://github.com/chjj/ttystudio/issues" },
-  "license": "MIT",
-  "keywords": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
-  "tags": ["terminal", "tty", "record", "recorder", "gif", "png", "apng"],
+  "bugs": {
+    "url": "http://github.com/chjj/ttystudio/issues"
+  },
+  "keywords": [
+    "terminal",
+    "tty",
+    "record",
+    "recorder",
+    "gif",
+    "png",
+    "apng"
+  ],
+  "tags": [
+    "terminal",
+    "tty",
+    "record",
+    "recorder",
+    "gif",
+    "png",
+    "apng"
+  ],
   "dependencies": {
     "blessed": ">=0.1.80",
     "jshashes": "^1.0.7",

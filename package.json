@@ -1,22 +1,17 @@
 {
-  "name": "ttystudio",
-  "description": "A terminal-to-gif recorder minus the headaches.",
-  "author": "Christopher Jeffrey",
+  "name": "toughtty",
+  "description": "Record practical terminal screencasts easily",
+  "author": "Sage Gerard",
   "version": "0.0.16",
-  "license": "MIT",
-  "main": "./index.js",
+  "license": "SEE LICENSE IN LICENSE",
   "bin": {
-    "ttystudio": "./bin/ttystudio"
+    "toughtty": "./bin/toughtty"
   },
-  "scripts": {
-    "start": "./bin/ttystudio ~/ttystudio-test.gif"
-  },
-  "man": "./man/ttystudio.1",
   "preferGlobal": true,
-  "repository": "git://github.com/chjj/ttystudio.git",
-  "homepage": "https://github.com/chjj/ttystudio",
+  "repository": "git://github.com/zyrolasting/toughtty.git",
+  "homepage": "https://github.com/zyrolasting/toughtty",
   "bugs": {
-    "url": "http://github.com/chjj/ttystudio/issues"
+    "url": "http://github.com/zyrolasting/toughtty/issues"
   },
   "keywords": [
     "terminal",
@@ -32,11 +27,10 @@
     "tty",
     "record",
     "recorder",
-    "gif",
-    "png",
-    "apng"
+    "gif"
   ],
   "dependencies": {
+    "argparse": "^1.0.9",
     "blessed": ">=0.1.80",
     "jshashes": "^1.0.7",
     "pty.js": ">=0.3.0",

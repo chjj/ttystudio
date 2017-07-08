@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const options = require('../lib/options');
+const commands = require('../cli/index');
+
+commands.run(options)
+        .catch((err) => {
+            console.error(err);
+            
+            return err.exitCode || 1;
+        })
+        .then(process.exit);
